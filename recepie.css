@@ -4,6 +4,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #674d3c;
+  margin: 1.5em;
 }
 
 li {
@@ -36,7 +37,26 @@ body {
   background-color: #a2836e;
   padding: 1.5%;
 }
+
+.brownieImage {
+  border-width: 1 em;
+  border-color: #a2836e;
+  border-style: solid;
+  margin: 1.5em;
+}
 footer {
   background-color: #d9ad7c;
+  padding: 1.5%;
+  margin: 1.5 em;
+}
+
+.headers {
+  margin-left: 1em;
+}
+.floatingPanel {
+  font-size: 1.2 em;
+  font-weight: bold;
+  color: wheat;
+  background-color: #a2836e;
   padding: 1.5%;
 }
