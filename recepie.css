@@ -1,9 +1,9 @@
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 1.5 em;
+  padding: 1.5em;
   overflow: hidden;
-  background-color: #674d3c;
+  background-color: #a2836e;
   margin: 1.5em;
 }
 
@@ -13,7 +13,7 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: #fff2df;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -21,7 +21,7 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #a2836e;
+  background-color: #555;
 }
 body {
   background-color: #fff2df;
@@ -39,7 +39,7 @@ body {
 }
 
 .brownieImage {
-  border-width: 1 em;
+  border-width: 1 rem;
   border-color: #a2836e;
   border-style: solid;
   margin: 1.5em;
@@ -58,29 +58,38 @@ footer {
   font-weight: bold;
   color: wheat;
   background-color: #a2836e;
-  padding: 1.5%;
+  padding: 1.2%;
+  display: block;
 }
 .sidebar {
   margin: 0;
-  padding: 0;
+  padding: 1.1em;
   width: 200px;
-  background-color: #f1f1f1;
-  position: fixed;
+  background-color: #a2836e;
+  position: relative;
   height: 100%;
   overflow: auto;
-}
-
-/* Sidebar links */
-.sidebar a {
+  float: right;
+  display: flex;
   display: block;
+  margin-right: 15%;
+  margin-top: 2.5%;
+
+  border-width: 0.3rem;
+  border-color: #a2836e;
+  border-style: solid;
+}
+.sidebar a {
   color: black;
   padding: 16px;
   text-decoration: none;
+  display: block;
+  margin: 5%;
 }
 
 /* Active/current link */
 .sidebar a.active {
-  background-color: #4caf50;
+  background-color: #d9ad7c;
   color: white;
 }
 
@@ -90,6 +99,7 @@ footer {
   color: white;
 }
 
+*/
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
   margin-left: 200px;
@@ -98,7 +108,7 @@ div.content {
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 400px) {
   .sidebar {
     width: 100%;
     height: auto;
