@@ -15,8 +15,9 @@ li a {
   display: block;
   color: #fff2df;
   text-align: center;
-  padding: 14px 16px;
+  padding: 1vw;
   text-decoration: none;
+  font-weight: 400;
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -26,6 +27,20 @@ li a:hover {
 body {
   background-color: #fff2df;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* This is horizantal panel using flexbox. */
+
+.flex-container {
+  display: flex;
+}
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 1vw;
+  padding: 1.5vw;
+  font-size: 1.2rem;
+  background-color: #a2836e;
+  color: #fff2df;
 }
 
 .Ingredients {
@@ -42,16 +57,16 @@ body {
   border-width: 1 rem;
   border-color: #a2836e;
   border-style: solid;
-  margin: 1.5em;
+  margin: 2vw;
 }
 footer {
   background-color: #d9ad7c;
-  padding: 1.5%;
-  margin: 1.5 em;
+  padding: 1.5vw;
+  margin: 1 vw;
 }
 
 .headers {
-  margin-left: 1em;
+  margin-left: 1vw;
 }
 .floatingPanel {
   font-size: 1.2 em;
@@ -79,12 +94,13 @@ footer {
   border-color: #a2836e;
   border-style: solid;
 }
-.sidebar a {
-  color: black;
+.sidebar > a {
+  color: #fff2df;
   padding: 16px;
   text-decoration: none;
   display: block;
   margin: 5%;
+  font-weight: 400;
 }
 
 /* Active/current link */
@@ -116,6 +132,7 @@ div.content {
   }
   .sidebar a {
     float: left;
+    font-size: 1.5 rem;
   }
   div.content {
     margin-left: 0;
@@ -127,5 +144,11 @@ div.content {
   .sidebar a {
     text-align: center;
     float: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 0.5 rem;
   }
 }
