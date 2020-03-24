@@ -29,6 +29,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Trying to put sidbar and an image  to flexbox */
+.flex {
+  display: flex;
+  background-color: #fff2df;
+}
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 1vw;
+  padding: 2vw;
+  font-size: 1.5rem;
+}
+
 /* This is horizantal panel using flexbox. */
 
 .flex-container {
@@ -46,6 +58,7 @@ body {
 .Ingredients {
   background-color: #a2836e;
   padding: 1.5%;
+  margin-top: 5vh;
 }
 
 .Instructions {
@@ -68,24 +81,17 @@ footer {
 .headers {
   margin-left: 1vw;
 }
-.floatingPanel {
-  font-size: 1.2 em;
-  font-weight: bold;
-  color: wheat;
-  background-color: #a2836e;
-  padding: 1.2%;
-  display: block;
-}
+
 .sidebar {
   margin: 0;
-  padding: 1.1em;
-  width: 200px;
+  padding: 1.1;
+  width: 20vw;
+
   background-color: #a2836e;
   position: relative;
-  height: 100%;
   overflow: auto;
   float: right;
-  display: flex;
+  /* display: flex; */
   display: block;
   margin-right: 15%;
   margin-top: 2.5%;
