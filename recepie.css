@@ -1,14 +1,17 @@
 ul {
   list-style-type: none;
-  margin: 1.5 em;
-  padding: 1.5em;
+  margin: 3vw;
+  padding: 2vw;
   overflow: hidden;
   background-color: #a2836e;
-  margin: 1.5em;
+  display: flex;
+  /* justify-content: space-around; */
 }
 
 li {
   float: left;
+  flex: auto;
+  text-align: center;
 }
 
 li a {
@@ -17,7 +20,8 @@ li a {
   text-align: center;
   padding: 1vw;
   text-decoration: none;
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -34,28 +38,39 @@ body {
   display: flex;
   background-color: #fff2df;
 }
-.flex-container > div {
+.flex > div {
   background-color: #f1f1f1;
   margin: 1vw;
   padding: 2vw;
-  font-size: 1.5rem;
+  font-size: 1rem;
+}
+/* flex box for recepie and ingerients grid */
+.Flex-Box1 {
+  display: flex;
+}
+.Flex-Box1 > section {
+  background-color: #a2836e;
+  margin: 1vw;
+  padding: 2vw;
+  font-size: 1rem;
 }
 
 /* This is horizantal panel using flexbox. */
 
 .flex-container {
   display: flex;
+  align-items: stretch;
 }
 .flex-container > div {
   background-color: #f1f1f1;
   margin: 1vw;
   padding: 1.5vw;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   background-color: #a2836e;
   color: #fff2df;
 }
 
-.Ingredients {
+/* .Ingredients {
   background-color: #a2836e;
   padding: 1.5%;
   margin-top: 5vh;
@@ -64,7 +79,7 @@ body {
 .Instructions {
   background-color: #a2836e;
   padding: 1.5%;
-}
+} */
 
 .brownieImage {
   border-width: 1 rem;
@@ -78,9 +93,9 @@ footer {
   margin: 1 vw;
 }
 
-.headers {
+/* .headers {
   margin-left: 1vw;
-}
+} */
 
 .sidebar {
   margin: 0;
@@ -88,8 +103,8 @@ footer {
   width: 20vw;
 
   background-color: #a2836e;
-  position: relative;
-  overflow: auto;
+  /* position: relative;
+  overflow:auto; */
   float: right;
   /* display: flex; */
   display: block;
@@ -130,7 +145,7 @@ div.content {
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
   .sidebar {
     width: 100%;
     height: auto;
@@ -145,16 +160,29 @@ div.content {
   }
 }
 
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
-}
-
 @media screen and (max-width: 400px) {
   body {
     font-size: 0.5 rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .coloumn {
+    width: 50%;
+  }
+} */
+
+@media screen and (min-width: 375px) {
+  .column {
+    width: 100%;
+  }
+}
+
+@media all and(max-width:400px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    text-align: center;
   }
 }
