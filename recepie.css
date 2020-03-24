@@ -68,6 +68,7 @@ body {
   font-size: 0.8rem;
   background-color: #a2836e;
   color: #fff2df;
+  flex: auto;
 }
 
 /* .Ingredients {
@@ -143,42 +144,23 @@ div.content {
   padding: 1px 16px;
   height: 1000px;
 }
-
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
-/* @media screen and (max-width: 400px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {
-    float: left;
-    font-size: 1.5 rem;
-  }
-  div.content {
-    margin-left: 0;
+/* font and genral styling */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media all and (max-width: 400px) {
+  .flex-container {
+    width: 40%;
   }
 }
 
-@media screen and (max-width: 400px) {
-  body {
-    font-size: 0.5 rem;
-  }
-}
-
-@media screen and (max-width: 992px) {
+@media all and (min-width: 375px) {
   .coloumn {
-    width: 50%;
-  }
-} */
-
-@media screen and (min-width: 375px) {
-  .column {
     width: 100%;
   }
 }
 
-@media all and(max-width:400px) {
+@media all and (max-width: 400px) {
   nav ul {
     flex-direction: column;
   }
