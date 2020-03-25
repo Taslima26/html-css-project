@@ -47,12 +47,15 @@ body {
 /* flex box for recepie and ingerients grid */
 .Flex-Box1 {
   display: flex;
+  flex: wrap;
 }
 .Flex-Box1 > section {
   background-color: #a2836e;
   margin: 1vw;
   padding: 2vw;
   font-size: 1rem;
+  flex-direction: column;
+  text-align: center;
 }
 
 /* This is horizantal panel using flexbox. */
@@ -71,27 +74,31 @@ body {
   flex: auto;
 }
 
-/* .Ingredients {
+.Ingredients {
   background-color: #a2836e;
   padding: 1.5%;
   margin-top: 5vh;
+  width: 100%;
 }
 
 .Instructions {
   background-color: #a2836e;
   padding: 1.5%;
-} */
+  width: 100%;
+}
 
 .brownieImage {
-  border-width: 1 rem;
+  border-width: 100%;
   border-color: #a2836e;
   border-style: solid;
-  margin: 2vw;
+  margin: 2%;
+  width: 100%;
 }
 footer {
   background-color: #d9ad7c;
   padding: 1.5vw;
   margin: 1 vw;
+  width: 100%;
 }
 
 /* .headers {
@@ -101,12 +108,12 @@ footer {
 .sidebar {
   margin: 0;
   padding: 1.1;
-  width: 20vw;
+  width: 100%;
 
   background-color: #a2836e;
   /* position: relative;
   overflow:auto; */
-  float: right;
+  /* float: right; */
   /* display: flex; */
   display: block;
   margin-right: 15%;
@@ -149,14 +156,14 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 @media all and (max-width: 400px) {
-  .flex-container {
-    width: 40%;
+  .flex {
+    width: 100%;
   }
 }
 
-@media all and (min-width: 375px) {
-  .coloumn {
-    width: 100%;
+@media all and (max-width: 375px) {
+  .Flex-Box1 {
+    flex-direction: column;
   }
 }
 
